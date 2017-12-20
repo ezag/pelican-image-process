@@ -94,8 +94,8 @@ def scale(i, w, h, upscale, inside):
     dimensions specified, else it will not be smaller.
     """
     bbox = i.getbbox()
-    iw = bbox[2] - bbox[0]
-    ih = bbox[3] - bbox[1]
+    iw = bbox[2]
+    ih = bbox[3]
 
     if w == 'None':
         w = 1.
